@@ -1,0 +1,682 @@
+body{
+    perspective: 700px;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    background-color:#004440;
+    box-sizing: border-box;
+    height: 3000px;
+    /* position: relative; */
+   
+}
+.header{
+    width: 80%;
+    margin: auto;
+    margin-top: 35px;
+    
+}
+.container{
+    margin: auto;
+    overflow: auto;
+    
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    background-image: url(../Images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-right: 100px;
+}
+
+
+.tabs ul li {
+    float: left;
+    list-style: none;
+    display: inline;
+    margin-left:35px ;
+    /* position: relative; */
+
+    
+    
+}
+.tabs ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:whitesmoke;
+    font-weight: bolder;
+    position: relative;
+}
+
+.tabs ul li a ::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    border-width: 0 2px;
+    height: 100%;
+    width: 95%;
+    transform: scale3d(1,0,1);
+
+
+
+}
+
+
+.tabs ul li a :hover ::before{
+    background-color: red;
+}
+
+.icons-of-header{
+    float: left;
+    margin-left:50px;
+    font-size: 25px;
+    color:whitesmoke;
+    font-weight: bolder; 
+}
+
+.drop-list-father ul{
+    /* background-color: cyan;
+    width: 800px;
+    height: 800px; */
+    display: block;
+}
+.list-1{
+    position: absolute;
+    top: 40px;
+    left: 370px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    width: 400px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgb(177, 154, 154);
+    transform: scale(0);
+   
+
+}
+.list-2{
+    position: absolute;
+    top: 60px;
+    left: 370px;   
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    transform: scale(0);
+   
+
+    
+}
+.list-3{
+    position: absolute;
+    top: 80px;
+    left: 370px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    transform: scale(0);
+  
+
+}
+.drop-list-father:hover .list-1{
+    visibility: visible;
+    transition: 1s;
+    transform: scale(1);
+}
+.drop-list-father:hover .list-2{
+    visibility: visible;
+    transition: 1s;
+    transform: scale(1);
+}
+.drop-list-father:hover .list-3{
+    visibility: visible;
+    transition: 1s;
+    transform: scale(1);
+}
+
+/* .list-1 li {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+
+.main{
+    width: 80%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    z-index: -4;
+   
+  
+}
+.sec-1{
+    
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+
+}
+.sec-1-image-1{
+    height: 500px;
+    width: 100%;
+    background-image: url(../Images/The\ Godfather\ \(1972\)\ [1088\ x\ 1640].png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 100%;
+    color: white;
+    box-shadow: -15px 10px 20px 2px rgb(226, 160, 160) ;
+}
+.sec-1-image-1:hover{
+    transition: 1s;
+    transform: scale(1.1,1.1);
+    box-shadow: -15px 10px 2px 5px rgb(116, 4, 4) ;
+
+}
+
+.sec-1-image-2{
+    background-image: url(../Images/The\ Godfather\ 2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 100%;
+    height: 500px;
+    width: 100%;
+    box-shadow: 15px 10px 20px 2px rgb(226, 160, 160) ;
+}
+.sec-1-image-2:hover{
+    transition: 2s;
+    transform: scale(1.1,1.1);
+    box-shadow: 15px 10px 2px 5px rgb(116, 4, 4) ;
+
+}
+.sec-1-text{
+    margin: auto;
+    text-align: center;
+}
+.tit-sec-1{
+    font: bolder;
+    color: #E9C46A;
+    font-size: 30px;
+    margin-bottom:5px ;
+}
+.tit-sec-1 a{
+    font-size: 20px;
+    color: #E9C46A;
+
+}
+.but-sec-1{
+    border: none;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    margin-left:10px ;
+    margin-top: 20px;
+    background-color: wheat;  
+}
+
+.but-sec-1 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #0211e9;
+    text-transform: capitalize;
+
+}
+.but-sec-1:hover{
+    transform: scale(1.2,1.3);
+    transition: 0.5s;
+    background-color: burlywood;
+    box-shadow: 1px 1px 2px 5px rgb(8, 255, 181);
+}
+.but-sec-1 a:hover{
+    color: rgb(6, 18, 19);
+    transition: 0.1s;
+
+}
+.section-1{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    
+}
+.sec-2-tit h2{
+    text-align: center;
+    font: bolder;
+    color: #E9C46A;
+    font-size: 35px;
+    line-height: 1;
+    margin-bottom: 0;
+   
+}
+.sec-2-tit{
+    margin-bottom: 3px;
+    
+}
+.line{
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: auto ;
+    background-color: burlywood;
+    
+}
+.section-1:hover .line{
+    width: 550px;
+    transition:1.5s;
+   
+}
+
+.sec-2-movies-posters{
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(4,50%);
+    margin: auto;
+    grid-column-gap: 2px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.poster-1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img-poster-1{
+    background-image: url(../Images/12\ Angry\ Men\ -\ PosterSpy.jpg);
+    background-position:left ;
+    background-repeat: no-repeat;
+    background-size: 300px 400px;
+    width: 300px;
+    height:400px;  
+}
+.poster-1:hover{
+    transform:matrix(1.10,-0.60,0.30,1.20,-22,7);
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.poster-2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img-poster-2{
+    background-image: url(../Images/primal\ fear.jpg);
+    background-position:left ;
+    background-repeat: no-repeat;
+    background-size: 300px 400px;
+    width: 300px;
+    height:400px;  
+}
+.poster-2:hover{
+    transform:matrix(1.10,-0.60,0.30,1.20,-22,7);
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.poster-3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img-poster-3{
+    background-image: url(../Images/shaw.jpg);
+    background-position:left ;
+    background-repeat: no-repeat;
+    background-size: 300px 400px;
+    width: 300px;
+    height:400px;  
+}
+.poster-3:hover{
+    transform:matrix(0.98,0.64,-0.32,1.74,30,37);
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.poster-4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img-poster-4{
+    background-image: url(../Images/Schindler.jpg);
+    background-position:left ;
+    background-repeat: no-repeat;
+    background-size: 300px 400px;
+    width: 300px;
+    height:400px;  
+}
+.poster-4:hover{
+    transform:matrix(0.98,0.64,-0.32,1.74,30,37);
+    transition: 0.3s;
+    z-index: 2;
+}
+div>h3{
+    color: wheat;
+    font-size: 15px;
+    line-height: 1px;
+    
+    
+}
+div>h3+h2{
+    color: wheat;
+    font-size: 30px;
+    margin-top: 0;
+    display: inline;
+}
+h2~i{
+    position: absolute;
+    right: 60px;
+    font-size: 35px;
+    transform: rotate(90deg);
+    color: burlywood;
+}
+
+
+.also{
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: repeat(4,20%);
+    /* grid-template-rows: repeat(1,500px); */
+    grid-column-gap: 5%;
+    width: 100%;
+    /* height: 500px; */
+    margin-top: 35px;
+    
+    /* background-color: #0211e9; */
+    
+
+}
+.also-son-1{
+    position: relative;
+    grid-column-start: 1;  
+    grid-column-end:3; 
+    /* border: solid red 2px; */
+    background-color: burlywood;
+    width:110%;
+    min-height: 300px;
+    box-shadow: 5px 10px 5px 1px rgb(223, 14, 77);
+}
+.also-son-2{
+   
+    /* border: solid red 2px; */
+    background-image: url(../Images/Pulp\ Fiction\ by\ Paul\ Gates\ -\ Home\ of\ the\ Alternative\ Movie\ Poster\ -AMP-.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 120%;
+    min-height: 300px;
+    transition: transform 1s;
+    transition-duration: 0.5s;
+}
+.also-son-2:hover{
+    transform: scale(1.2,1.2);
+}
+.also-son-3{
+    background-image: url(../Images/bad\ ugly.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 120%;
+    min-height: 300px;
+    transition: transform 1s;
+    transition-duration: 0.5s;
+    margin: auto;
+}
+.also-son-3:hover{
+    transform: scale(1.2,1.2);    
+}
+/* .also-son-4{
+    border: solid red 2px;
+    background-color: burlywood;
+    width: 100%;
+    min-height: 200px;
+} */
+
+.also-son-1 i{
+    display: block;
+    font-size: 50px;
+    color: brown;
+    margin-left:10px ;
+}
+.also-son-1>h2{
+    margin-left: 2px;
+    margin-top: 5px;
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+.also-son-1>h4{
+    margin-left: 2px;
+    margin-top: 35px;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    
+}
+.also-son-1>p{
+    margin-left: 10px;
+    font-size: 20px;
+    
+    
+}
+
+.moving{
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    animation-name: moving-ani;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes moving-ani{
+    0%{
+        left:15px ;
+        color: teal;
+        transform: scale(1.1,1.4);
+        /* font-size: 30px; */
+    }
+    250%{
+        left: 25%;
+        color: brown;
+        transform: scale(1.4,1.1);
+    }
+
+    50%{
+        left: 60%;
+        color: tomato;
+        transform: scale(1.1,1.4);
+    }
+    100%{
+        left: 15px;
+        color: red;
+        transform: scale(1.1,1.4);
+    }
+}
+.section i {
+    font-size: 50px;
+}
+
+.parent-icons{
+    margin-top: 60px;
+    box-shadow: 5px 10px 5px 1px rgb(51, 158, 153);
+}
+.container-icons{
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: repeat(9,0%); */
+}
+.container-icons div{
+    /* background-color: red; */
+    width: 1000px;
+    text-align: center;
+    color: wheat;
+
+}
+.container-icons div i{
+   font-size: 50px;
+   /* color: rgb(0, 0, 255); */
+   animation-name: camera-icon;
+   animation-duration: 5s;
+   transition:  1s;
+    animation-iteration-count: infinite;
+}
+ @keyframes camera-icon{
+   
+    50%{ 
+        color: rgb(12, 218, 207);
+    }
+
+}
+.container-icons div:hover i{
+    color: red;
+    
+
+}
+
+
+.tit-1{
+    line-height: 2px;
+    font-size: 20px;
+
+}
+.tit-2{
+    line-height: 2px;
+    font-size: 15px;
+    word-spacing: 2px;
+
+}
+.liner{
+    transform:rotate(90deg) ;
+    width: 400px;
+    height: 2px;
+    background-color: aquamarine;
+    margin: auto ;
+    
+}
+
+
+
+
+.tall-line{
+    display: block;
+    width:80%;
+    background-color: burlywood;
+    margin: 20px auto 0 auto;
+    height: 2px;
+
+}
+.section-2{
+    width: 80%;
+    margin: auto;
+    margin-top: 300px;
+    /* background-color: #0211e9; */
+    text-align: center;
+    position: relative;
+    transform-style: preserve-3d ;
+    
+}
+.section-2:hover .line{
+    width: 80%;
+    transition:1.5s;
+   
+}
+.section-2 h2{
+    text-align: center;
+    font: bolder;
+    color: #E9C46A;
+    font-size: 35px;
+    line-height: 1;
+    margin-bottom: 5px;
+   
+}
+.sub-tabs{
+    width: 50%;
+    margin: auto;
+}
+.sub-tabs ul {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(4,20%);
+    grid-column-gap: 20%;
+
+}
+.sub-tabs ul li {
+    list-style: none;
+}
+.sub-tabs ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    /* text-align: center; */
+    color: #E9C46A;
+}
+.container-last{
+    margin-top:50px;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(3,30%);
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    height: 1000px;
+    transition: 0.5s;
+    
+}
+.container-last:hover{
+    box-shadow: 15px 10px 3px 1.5px rgb(6, 185, 216);
+
+
+}
+.content-front{
+    background-image: url(../Images/The\ Dark\ Knight\ \(2008\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    
+    
+
+}
+.overlay-back{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    visibility: hidden; 
+    transition:  0.5s; 
+    
+}
+.content-front:hover .overlay-back{
+    visibility: visible;
+    box-shadow: -3px -15px 3px 1.5px rgb(6, 185, 216);
+    transform: rotateY(180deg);
+}
+.details-content{
+    transform: translate(50%,50%); 
+    /* visibility: hidden; */
+    transform: rotateY(180deg);
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+
+    
+}
+.overlay-back:hover .details-content{
+    /* visibility: visible; */
+    transform: rotateY(180deg);
+  
+    
+    
+
+}
+
+.details-content i {
+    color: yellow;
+    text-align:center ;
+}
